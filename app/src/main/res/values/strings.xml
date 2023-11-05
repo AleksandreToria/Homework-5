@@ -10,7 +10,7 @@
     <string name="login_text">Log in</string>
     <string name="username_placeholder">the_jane</string>
     <string name="sign_up">SIGN UP</string>
-    <string name="terms">By signing up, you agree to Photo’s Terms of Service and Privacy Policy.</string>
+    <string name="terms">By signing up, you agree to Photo’s <u>Terms of Service</u> and <u>Privacy Policy</u>.</string>
     <string name="success">You have succesfully logged in</string>
 
 </resources>
