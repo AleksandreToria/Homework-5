@@ -32,20 +32,20 @@ class RegisterActivityTwo : AppCompatActivity() {
     private fun usernameInput(username: String) {
         val user = FirebaseAuth.getInstance().currentUser
 
-        if (user != null) {
-            val profileUpdates = UserProfileChangeRequest.Builder()
-                .setDisplayName(username)
-                .build()
+        if (user == null) return
 
-            user.updateProfile(profileUpdates)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val intent = Intent(this, LoggedIn::class.java)
-                        startActivity(intent)
-                    } else {
-                        Toast.makeText(this, "Failed to update username", Toast.LENGTH_SHORT).show()
-                    }
+        val profileUpdates = UserProfileChangeRequest.Builder()
+            .setDisplayName(username)
+            .build()
+
+        user.updateProfile(profileUpdates)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val intent = Intent(this, LoggedIn::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this, "Failed to update username", Toast.LENGTH_SHORT).show()
                 }
-        }
+            }
     }
 }

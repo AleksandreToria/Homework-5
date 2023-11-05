@@ -58,15 +58,15 @@ class RegisterActivityOne : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    val intent = Intent(this, RegisterActivityTwo::class.java)
-                    startActivity(intent)
-                } else {
+                if (!task.isSuccessful) {
                     Toast.makeText(
                         this,
                         "Authentication failed.",
                         Toast.LENGTH_SHORT,
                     ).show()
+                } else {
+                    val intent = Intent(this, RegisterActivityTwo::class.java)
+                    startActivity(intent)
                 }
             }
     }
