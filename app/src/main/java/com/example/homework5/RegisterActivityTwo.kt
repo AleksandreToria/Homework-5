@@ -1,8 +1,11 @@
 package com.example.homework5
 
 import android.content.Intent
+import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import android.widget.Toast
 import com.example.homework5.databinding.ActivityRegisterOneBinding
 import com.example.homework5.databinding.ActivityRegisterTwoBinding
@@ -23,6 +26,34 @@ class RegisterActivityTwo : AppCompatActivity() {
 
         binding.registerBtn.setOnClickListener {
             usernameInput(binding.username.text.toString())
+        }
+
+        textUnderLine()
+    }
+
+    private fun textUnderLine() {
+        val terms = binding.terms
+        val fullText = terms.text.toString()
+        val spannableString = SpannableString(fullText)
+
+        val termsIndex = fullText.indexOf("Terms of Service")
+        val privacyPolicyIndex = fullText.indexOf("Privacy Policy")
+
+        if (termsIndex >= 0 && privacyPolicyIndex >= 0) {
+            spannableString.setSpan(
+                UnderlineSpan(),
+                termsIndex,
+                termsIndex + "Terms of Service".length,
+                0
+            )
+            spannableString.setSpan(
+                UnderlineSpan(),
+                privacyPolicyIndex,
+                privacyPolicyIndex + "Privacy Policy".length,
+                0
+            )
+
+            terms.text = spannableString
         }
     }
 

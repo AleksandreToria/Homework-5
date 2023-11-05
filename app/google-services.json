@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "585539691514",
-    "project_id": "authentication-2c552",
-    "storage_bucket": "authentication-2c552.appspot.com"
+    "project_number": "1016241928831",
+    "project_id": "register-and-login-c90a3",
+    "storage_bucket": "register-and-login-c90a3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:585539691514:android:88f513915c61f5bcdaba43",
+        "mobilesdk_app_id": "1:1016241928831:android:7932238f5db4a556e55d4a",
         "android_client_info": {
           "package_name": "com.example.homework5"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBpusIlZoKBM6VQqLolA8GNNH4t6wFSM8A"
+          "current_key": "AIzaSyD8OoS8T2bbHqqeQu4nRISFDqBAtmrvBXI"
         }
       ],
       "services": {
