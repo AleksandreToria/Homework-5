@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Homework #5</string>
+    <string name="photo">photo</string>
+    <string name="log_in">LOG IN</string>
+    <string name="register">REGISTER</string>
+    <string name="registerOne">Register</string>
+    <string name="jane_example_com">jane@example.com</string>
+    <string name="password_hint">............</string>
+    <string name="next">NEXT</string>
+    <string name="login_text">Log in</string>
+    <string name="username_placeholder">the_jane</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="terms">By signing up, you agree to Photo’s &lt;u&gt;Terms of Service&lt;/u&gt; and &lt;u&gt;Privacy Policy&lt;/u&gt;.</string>
+    <string name="success">You have succesfully logged in</string>
+
+</resources>

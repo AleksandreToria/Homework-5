@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585539691514",
+    "project_id": "authentication-2c552",
+    "storage_bucket": "authentication-2c552.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585539691514:android:88f513915c61f5bcdaba43",
+        "android_client_info": {
+          "package_name": "com.example.homework5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpusIlZoKBM6VQqLolA8GNNH4t6wFSM8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
